@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    
+    <title>Thomas-Prestemon Adrian Resume</title>
+    
+    <style type="text/css">
+        *                               { margin: 0px; padding: 0px; box-sizing: border-box; }
+        body                            { font: 14px Helvetica, Sans-Serif; line-height: 22px; background: none; }
+        a, a:active, a:visited, a:link  { color: #000; text-decoration: none; background-color: #FEF; /*border-bottom: 1px dotted #999;*/ }
+        a:hover, a:focus                { color: #FFF; text-decoration: none; background-color: #82B; /*border-bottom-style: solid;*/ }
+        div#page-wrap                   { width: 800px; margin: 0px auto; }
+        header>div                      { float: left; width: 325px; height: 160px;}
+        header>div#name                 { padding: 10px; clear: right; width: 475px; height: 160px; border-left: 4px solid #82B; }
+                        dl dt           { margin: 5px 5px 5px 0px; float: left; clear: both; font-weight: bold; text-align: right; }
+                        dl dd           { margin: 5px 0px 0px 5px; padding: 0px 0px 0px 5px; float: left; border-left: 4px solid #82B; }
+        header>div>     dl dt           { width: 70px; }
+        header>div>     dl dd           { width: 245px; }
+        section#main>   dl>dt           { width: 70px; }
+        section#main>   dl>dd           { width: 710px; }
+        dl>dd table                     { border-collapse: collapse; width: 100%; }
+        dl>dd table th                  { padding: 0px 10px 0px 0px; text-align: right; vertical-align: top; width: 115px; }
+        dl>dd table td                  { border-bottom: 1px solid #82B; }
+        dl>dd table tr:last-of-type td  { border: none; }
+        dl>dd>dl>dt                     { width: 105px; }
+        dl>dd>dl>dd                     { width: 585px; }
+        ul                              { margin: 0px 0px 5px 0px; display: block; font-size: 12px; width: 585px; }
+        ul>li                           { margin: 0px 5px; padding: 2px 5px; display: inline; list-style: none; }
+        ul.skills>li                    { font-weight: bold; border: 1px solid #82B }
+        span.level                      { margin: 0px 0px 0px 5px; font-size: 10px; font-weight: normal; vertical-align: top; color: #CCC; }
+        h1                              { margin: 0px 0px 5px 0px; font-size: 120px; line-height: 100px; letter-spacing: 14px; }
+        h2                              { margin: 0px 0px 0px 0px; font-size: 40px; line-height: 40px; letter-spacing: 5px; }
+        h3                              { margin: 0px 0px 0px 0px; font-size: 16px; line-height: 18px; }
+        h3>span.position                { font-weight: normal; }
+        p.small                         { font-size: 10px; line-height: 12px; }
+        div#modal                       { display: none; position: absolute; z-index: 999; display: block; top: 0px; left: 0px; margin: 0px auto; padding: 10px; width: 400px; height: 150px; text-align: center; background-color: #FFF; border: 2px solid #82B; }
+        a.button                        { display: block; margin: 40px auto 0px; padding: 3px 5px 5px 5px; text-decoration: none; width: 60px; height: 30px; }
+        a.button:visited, a.button:link { background-color: #82B; color: #FFF; border: 1px solid #82B; }
+        a.button:hover, a.button:focus  { background-color: #93C; color: #FFF; }
+        a.button:active                 { background-color: #FFF; color: #82B; }
+        div#grey                        { display: block; position: absolute; top: 0px; left: 0px; width: 0px; height: 0px; background-color: #000; opacity: 0.5; }
+    </style>
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<!--
+    Sorry for muddling the code with microdata and microformats, but I'm trying to keep myself in-practise, and trying to make my resume machine-friendly.
+    Furthermore, microdata and microformats are useful to the visually-impaired. :)
+-->
+
+<body>
+    <div id="page-wrap">
+        <header id="hcard-Adrian-Thomas-Prestemon" class="vcard" itemscope itemtype="http://schema.org/Person" itemref="role1 role2 role3 location">
+            <div id="contact-info">
+                <dl>
+                    <dt>Mobile</dt>
+                    <dd><a id="mobile" class="tel" href="#" title="Call me!"><span itemprop="telephone">please enable JavaScript</span></a></dd>
+                    <dt>Email</dt>
+                    <dd><a id="email" class="email" href="#" title="Email me!"><span itemprop="email">please enable JavaScript</span></a></dd>
+                    <div itemprop="url" itemscope itemtype="http://schema.org/WebPage">
+                        <dt id="website" itemprop="name">Website</dt>
+                        <dd><a class="url" rel="me" href="http://adrian.thomas-prestemon.com" title="My Personal Website and Portfolio" itemprop="url">http://adrian.thomas-prestemon.com</a></dd>
+                    </div>
+                    <div itemprop="url" itemscope itemtype="http://schema.org/WebPage">
+                        <dt id="github" itemprop="name">GitHub</dt>
+                        <dd><a class="url" rel="me" href="http://github.com/adriantp" title="My GitHub Page" itemprop="url">http://github.com/adriantp</a></dd>
+                    </div>
+                    <div itemprop="url" itemscope itemtype="http://schema.org/WebPage">
+                        <dt id="linkedin" itemprop="name">LinkedIn</dt>
+                        <dd><a class="url" rel="me" href="http://linkedin.com/in/adriantp" title="My LinkedIn Profile" itemprop="url">http://linkedin.com/in/adriantp</a></dd>
+                    </div>
+                </dl>
+            </div>
+            <div id="name" class="fn n">
+                <h1 id="first-name" class="given-name" itemprop="givenName">Adrian</h1>
+                <h2 id="last-name" class="family-name" itemprop="familyName">Thomas-Prestemon</h2>
+            </div>
+        </header>
+        <section id="main">
+            <dl>
+                <dt id="who-i-am" itemprop="name">Who I Am</dt><!-- Statement -->
+                <dd itemscope itemtype="http://schema.org/Thing" itemref="who-i-am">
+                    <p itemprop="description">I am a Front End Web Developer from the Chicago area who enjoys working with JavaScript and learning new technologies and creating new things.</p>
+                </dd>
+                <dt id="what-i-know" itemprop="name">What I Know</dt><!-- Skills -->
+                <dd>
+                    <!--<dl itemscope itemtype="http://schema.org/ItemList" itemref="what-i-know">
+                        <dt>Web</dt>
+                        <dd itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList" itemref="name-web">
+                            <ul>
+                                <meta itemprop="name" content="Web" />
+                                <li itemprop="itemListElement">XHTML</li>
+                                <li itemprop="itemListElement">HTML5</li>
+                                <li itemprop="itemListElement">CSS3</li>
+                                <li itemprop="itemListElement">SASS/SCSS</li>
+                                <li itemprop="itemListElement">Bootstrap</li>
+                                <li itemprop="itemListElement">JavaScript</li>
+                                <li itemprop="itemListElement">jQuery</li>
+                                <li itemprop="itemListElement">jQueryUI</li>
+                                <li itemprop="itemListElement">KendoUI</li>
+                                <li itemprop="itemListElement">PHP</li>
+                                <li itemprop="itemListElement">ASP.NET MVC3</li>
+                                <li itemprop="itemListElement">Apache</li>
+                                <li itemprop="itemListElement">MySQL</li>
+                                <li itemprop="itemListElement">IIS</li>
+                            </ul>
+                        </dd>
+                        <dt>Software</dt>
+                        <dd itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
+                            <ul>
+                                <meta itemprop="name" content="Software" />
+                                <li itemprop="itemListElement">Microsoft Office</li>
+                                <li itemprop="itemListElement">Visual Studio</li>
+                                <li itemprop="itemListElement">Photoshop</li>
+                                <li itemprop="itemListElement">Illustrator</li>
+                                <li itemprop="itemListElement">Dreamweaver</li>
+                                <li itemprop="itemListElement">Linux</li>
+                                <li itemprop="itemListElement">Windows</li>
+                                <li itemprop="itemListElement">Mac OS</li>
+                            </ul>
+                        </dd>
+                        <dt>Versioning</dt>
+                        <dd itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
+                            <ul>
+                                <meta itemprop="name" content="Versioning" />
+                                <li itemprop="itemListElement">GitHub</li>
+                                <li itemprop="itemListElement">BitBucket</li>
+                                <li itemprop="itemListElement">Team Foundation Server</li>
+                            </ul>
+                        </dd>
+                    </dl>-->
+                    <table itemscope itemtype="http://schema.org/ItemList" itemref="what-i-know">
+                        <tr itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList" itemref="web2 web3"><th rowspan="3" itemprop="name">Web</th><td itemprop="itemListElement">XHTML<span class="level">4</span></td><td itemprop="itemListElement">HTML5<span class="level">3</span></td><td itemprop="itemListElement">CSS3<span class="level">4</span></td><td itemprop="itemListElement">SASS/SCSS<span class="level">3</span></td><td itemprop="itemListElement">Bootstrap<span class="level">2</span></td></tr>
+                        <tr id="web2"><td itemprop="itemListElement">JavaScript<span class="level">4</span></td><td itemprop="itemListElement">jQuery<span class="level">4</span></td><td itemprop="itemListElement">jQueryUI<span class="level">3</span></td><td itemprop="itemListElement">KendoUI<span class="level">3</span></td><td itemprop="itemListElement">PHP<span class="level">2</span></td></tr>
+                        <tr id="web3"><td itemprop="itemListElement">ASP.NET MVC3<span class="level">1</span></td><td itemprop="itemListElement">Apache<span class="level">2</span></td><td itemprop="itemListElement">MySQL<span class="level">2</span></td itemprop="itemListElement"><td>IIS<span class="level">2</span></td><td></td></tr>
+                        <tr itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList" itemref="software2"><th rowspan="2" itemprop="name">Software</th><td itemprop="itemListElement">Microsoft Office<span class="level">4</span></td><td itemprop="itemListElement">Visual Studio<span class="level">2</span></td><td itemprop="itemListElement">Photoshop<span class="level">3</span></td><td itemprop="itemListElement">Illustrator<span class="level">1</span></td><td itemprop="itemListElement">Dreamweaver<span class="level">3</span></td></tr>
+                        <tr id="software2"><td itemprop="itemListElement">Linux<span class="level">2</span></td><td itemprop="itemListElement">Windows<span class="level">4</span></td><td colspan="3" itemprop="itemListElement">Mac OS<span class="level">4</span></td></tr>
+                        <tr itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><th itemprop="name">Versioning</th><td itemprop="itemListElement">GitHub<span class="level">2</span></td><td itemprop="itemListElement">BitBucket<span class="level">1</span></td><td colspan="2" itemprop="itemListElement">Team Foundation Server<span class="level">2</span></td></tr>
+                    </table>
+                </dd>
+                <dt id="what-i-have-done" itemprop="name">What I Have Done</dt><!-- Experience -->
+                <dd>
+                    <table itemscope itemtype="http://schema.org/ItemList" itemref="what-i-have-done">
+                        <tr itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><th itemprop="name">Business Web Apps</th><td itemprop="itemListElement">Perkins+Will Project Hub</td><td itemprop="itemListElement">PosTrack SO/PO Form Tracker</td><td itemprop="itemListElement">PosTrack Open Support Ticket Tracker</td><td itemprop="itemListElement">PosTrack Training Video Player</td></tr>
+                        <tr itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><th itemprop="name">Personal Portfolio</th><td itemprop="itemListElement">JS Window Manager</td><td itemprop="itemListElement">Several HTML5 Games</td><td colspan="2"></td></tr>
+                    </table>
+                </dd>
+                <dt id="what-i-am-learning" itemprop="name">What I am Learning</dt>
+                <dd>
+                    <table itemscope itemtype="http://schema.org/ItemList" itemref="what-i-am-learning">
+                        <tr itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><th itemprop="name">Web</th></td><td itemprop="itemListElement">Node.JS</td><td itemprop="itemListElement">Python</td><td itemprop="itemListElement">CSS Transforms</td><td itemprop="itemListElement">Mobile Web Development</td></tr>
+                        <tr itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><th itemprop="name">Electronics</th><td itemprop="itemListElement">Atmel C</td><td itemprop="itemListElement">PIC C</td><td colspan="2" itemprop="itemListElement">Arduino/Wiring</td></tr>
+                        <tr itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><th itemprop="name">Extra</th><td itemprop="itemListElement">Bash</td><td colspan="3" itemprop="itemListElement">Mobile App Development</td></tr>
+                    </table>
+                </dd>
+                <dt id="what-i-will-learn" itemprop="name">What I Will Learn</dt>
+                <dd>
+                    <table itemscope itemtype="http://schema.org/ItemList" itemref="what-i-will-learn">
+                        <tr itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><th itemprop="name">Web</th><td itemprop="itemListElement">Ruby</td><td itemprop="itemListElement">Flash</td><td itemprop="itemListElement">ActionScript</td><td itemprop="itemListElement">.Net (VB and C#)</td></tr>
+                        <tr itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><th itemprop="name">Native</th><td itemprop="itemListElement">C++</td><td itemprop="itemListElement">Java</td><td itemprop="itemListElement">Objective-C</td><td itemprop="itemListElement">Perl</td></tr>
+                    </table>
+                </dd>
+                <dt id="where-i-have-been" itemprop="name">Where I Have Been</dt><!-- Employment History -->
+                <dd>
+                    <dl itemscope itemtype="http://schema.org/Event" itemref="where-i-have-been">
+                        <dt><time itemprop="startDate" datetime="2012-01-01">2012</time>-<time itemprop="endDate" datetime="2012-12-31">2012</time></dt>
+                        <dd>
+                            <div class="vcard" itemprop="subEvents" itemscope itemtype="http://schema.org/Event">
+                                <h3 itemprop="performer" itemscope itemtype="http://schema.org/Organization"><a class="fn org url" itemprop="url" href="http://www.perkinswill.com"><span itemprop="name">Perkins+Will</span></a> <span itemprop="description" class="position">Front-End Web Developer</span></h3>
+                                <h4><time itemprop="startDate" datetime="2012-05-01">May</time> - <time itemprop="endDate" datetime="2012-10-01">October</time></h4>
+                                <p itemprop="description">Helped build internal web app from ground up</p>
+                                <ul class="skills" itemprop="description" itemscope itemtype="http://schema.org/ItemList"><li itemprop="itemListElement">HTML5<span class="level">3</span></li><li itemprop="itemListElement">CSS3<span class="level">4</span></li><li itemprop="itemListElement">SCSS<span class="level">2</span></li><li itemprop="itemListElement">Bootstrap<span class="level">2</span></li><li itemprop="itemListElement">jQuery<span class="level">4</span></li><li itemprop="itemListElement">jQueryUI<span class="level">3</span></li><li itemprop="itemListElement">KendoUI<span class="level">3</span></li></ul>
+                            </div>
+                            <div class="vcard" itemprop="subEvents" itemscope itemtype="http://schema.org/Event">
+                                <h3 itemprop="performer" itemscope itemtype="http://schema.org/Organization"><a class="fn org url" itemprop="url" href="http://www.smf.com"><span itemprop="name">Zagnoli, McEvoy, Foley</span></a> <span itemprop="description" class="position">Drupal Web Developer</span></h3>
+                                <h4><time itemprop="startDate" datetime="2012-03-01">March</time> - <time id="today" itemprop="endDate" datetime="2012-12-01">Present</time></h4>
+                                <p itemprop="description">Working on Drupal website</p>
+                                <ul class="skills" itemprop="description" itemscope itemtype="http://schema.org/ItemList"><li itemprop="itemListElement">Drupal<span class="level">2</span></li><li itemprop="itemListElement">XHTML<span class="level">4</span></li><li itemprop="itemListElement">CSS3<span class="level">4</span></li><li itemprop="itemListElement">jQuery<span class="level">4</span></li></ul>
+                            </div>
+                            <div class="vcard" itemprop="subEvents" itemscope itemtype="http://schema.org/Event">
+                                <h3 itemprop="performer" itemscope itemtype="http://schema.org/Organization"><a class="fn org url" itemprop="url" href="http://www.gordonhanrahan.com"><span itemprop="name">Gordon Hanrahan</span></a> <span itemprop="description" class="position">Marketing Email Developer</span></h3>
+                                <h4><time itemprop="startDate" datetime="2012-03-01">March</time> - <time itemprop="endDate" datetime="2012-05-01">May</time></h4>
+                                <p itemprop="description">Assembled HTML emails from PSD templates</p>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl itemscope itemtype="http://schema.org/Event" itemref="where-i-have-been">
+                        <dt><time itemprop="startDate" datetime="2008-01-01">2008</time>-<time itemprop="endDate" datetime="2012-01-01">2012</time></dt>
+                        <dd>
+                            <div class="vcard" itemprop="subEvents" itemscope itemtype="http://schema.org/Event">
+                                <h3 itemprop="performer" itemscope itemtype="http://schema.org/Organization"><a class="fn org url" itemprop="url" href="http://web.archive.org/web/20110129071638/http://www.postrack.net/Home.aspx"><span itemprop="name">PosTrack Technologies</span></a> <span itemprop="description" class="position">Interactive Marketing Developer</span></h3>
+                                <h4><time itemprop="startDate" datetime="2011-11-01">November 2011</time> - <time itemprop="endDate" datetime="2012-01-05">January 2012</time></h4>
+                                <p itemprop="description">Worked on redeveloping the company website</p>
+                                <ul class="skills" itemprop="description" itemscope itemtype="http://schema.org/ItemList"><li itemprop="itemListElement">XHTML<span class="level">4</span></li><li itemprop="itemListElement">CSS3<span class="level">4</span></li><li itemprop="itemListElement">JavaScript<span class="level">4</span></li><li itemprop="itemListElement">AJAX<span class="level">2</span></li><li itemprop="itemListElement">Drupal<span class="level">2</span></li><li itemprop="itemListElement">Joomla<span class="level">1</span></li><li itemprop="itemListElement">Sitefinity<span class="level">1</span></li></ul>
+                            </div>
+                            <div class="vcard" itemprop="subEvents" itemscope itemtype="http://schema.org/Event">
+                                <h3 itemprop="performer" itemscope itemtype="http://schema.org/Organization"><a class="fn org url" itemprop="url" href="http://web.archive.org/web/20110129071638/http://www.postrack.net/Home.aspx"><span itemprop="name">PosTrack Technologies</span></a> <span itemprop="description" class="position">Support Technician</span></h3>
+                                <h4><time itemprop="startDate" datetime="2008-10-01">October 2008</time> - <time itemprop="endDate" datetime="2012-01-05">January 2012</time></h4>
+                                <p itemprop="description">Implemented OpenVPN across all client machines, reducing support call times by 80%</p>
+                                <p itemprop="description">Provided additional support for VoIP telecom department clients</p>
+                                <p itemprop="description">Built internal web apps, resulting in my induction to the Marketing team</p>
+                                <ul class="skills" itemprop="description" itemscope itemtype="http://schema.org/ItemList"><li itemprop="itemListElement">Windows<span class="level">4</span></li><li itemprop="itemListElement">Networking<span class="level">3</span></li><li itemprop="itemListElement">Linux<span class="level">2</span></li><li itemprop="itemListElement">VoIP<span class="level">1</span></li><li itemprop="itemListElement">PHP<span class="level">2</span></li><li itemprop="itemListElement">AJAX<span class="level">2</span></li><li itemprop="itemListElement">MySQL<span class="level">2</span></li></ul>
+                            </div>
+                        </dd>
+                    </dl>
+                    <p class="small"><span class="level">Grey numbers</span> next to skills indicate confidence out of 5 (<a href="http://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition">Dreyfus model</a>). Full employment history and references available upon request</p>
+                <!--<dt>Who I Know</dt>
+                <dd>References available upon request</dd>
+                <dt>What I Like</dt>
+                <dd>Cloud9
+                    Koding</dd>
+                <dt>What I Read</dt>
+                <dd>Lots of Books and Blogs and Stuff</dd>-->
+            </dl>
+        </section>
+    </div>
+    <div id="modal">
+        <p>Don't forget to View Source for an instant code sample!</p>
+        <a id="dismiss" class="button" href="#">Dismiss</a>
+    </div>
+    <div id="grey"></div>
+</body>
+<script type="text/javascript">
+    // This singleton handles unmasking my contact information links
+    // It is designed this way to keep spiders and robots from easily indexing my contact information (I HATE SPAM)
+    var Links = (function() {
+        var tel = "tel",
+            mailto = "mailto",
+            prefix = "+1",
+            name = "adrian",
+            area = "630",
+            lastOne = "thomas",
+            exchange = "297",
+            lastTwo = "prestemon",
+            number = "7837",
+            tld = "com",
+            telspan = '<span itemprop="telephone">',
+            emailspan = '<span itemprop="email">',
+            endspan = "</span>";
+        
+        var unmask = function() {
+            var mobile = document.getElementById("mobile");
+            var email = document.getElementById("email");
+            var phone = area + "-" + exchange + "-" + number;
+            var mail = name + "@" + lastOne + "-" + lastTwo + "." + tld;
+            var digits = tel + ":" + prefix + area + exchange + number;
+            var address = mailto + ":" + mail;
+            
+            var mobileHTML = telspan + phone + endspan;
+            var emailHTML = emailspan + mail + endspan;
+            
+            mobile.innerHTML = mobileHTML;
+            email.innerHTML = emailHTML;
+            mobile.setAttribute("href", digits);
+            email.setAttribute("href", address);
+        };
+        
+        return {
+            unmask: unmask
+        };
+    })();
+    
+    // This singleton stores all my utility functions for this document
+    var Browser = (function() {
+        var width = 0;
+        var height = 0;
+        
+        // Get window size for positioning of Modal element
+        // Modified from http://stackoverflow.com/a/3333336/771948
+        var size = function() {
+            if (typeof(window.innerWidth) === "number") { // Non-IE
+                width = window.innerWidth;
+                height = window.innerHeight;
+            } else if (document.documentelement && (document.documentelement.clientWidth || document.documentElement.clientHeight)) { // IE 6+ in "standards compliant mode"
+                width = document.documentElement.clientWidth;
+                height = document.documentElement.clientHeight;
+            } else if (document.body && document.body.clientWidth || document.body.clientHeight) { // IE 4 compatible
+                width = document.body.clientWidth;
+                height = document.body.clientHeight;
+            } else {
+                width = 0;
+                height = 600;
+            }
+            return {
+                w: width,
+                h: height
+            };
+        };
+        
+        // Cross-browser event handler
+        var addEvent = function(el, eType, fn, useCapture) {
+            if (el.addEventListener) {
+                el.addEventListener(eType, fn, useCapture);
+                return true;
+            } else if (el.attachEvent) {
+                return el.attachEvent("on" + eType, fn);
+            } else if (document.layers){
+                document.captureEvents(Event.KEYUP);
+            } else {
+                el["on" + eType] = fn;
+            }
+        };
+        
+        // KeyUp Handler
+        var key = function(e, code, fn) {
+            var evt = (e) ? e : ((window.event) ? window.event : null);
+            if (evt) {
+                var key = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+                if (key === code) fn();
+            }
+        };
+        
+        // Convert native Date string to ISO 8601 format, because toISOString/fromISOString are not cross-browser options
+        // Modified from example here (thank you MDN): https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date
+        var ISODateString = function(d) {
+            var pad = function(n) { return n<10 ? "0" + n : n };
+            return d.getUTCFullYear() + "-"
+                + pad(d.getUTCMonth()+1) + "-"
+                + pad(d.getUTCDate());
+            // For my purposes, I only need the year, month, and date
+            /*return d.getUTCFullYear()+'-'
+                  + pad(d.getUTCMonth()+1)+'-'
+                  + pad(d.getUTCDate())+'T'
+                  + pad(d.getUTCHours())+':'
+                  + pad(d.getUTCMinutes())+':'
+                  + pad(d.getUTCSeconds())+'Z'*/
+        };
+        
+        var today = function() {
+            var el = document.getElementById("today");
+            var d = new Date();
+            var now = ISODateString(d);
+            el.setAttribute("datetime", now);
+        };
+        
+        return {
+            size: size,
+            addEvent: addEvent,
+            key: key,
+            today: today
+        };
+    })();
+    
+    // This singleton handles anything to do with the Modal dialog, specificaly positioning, opening, and closing
+    var Modal = (function() {
+        var modal = document.getElementById("modal");
+        var dismiss = document.getElementById("dismiss");
+        var grey = document.getElementById("grey");
+        
+        var position = function(size) {
+            grey.style.width = size.w + "px";
+            grey.style.height = size.h + "px";
+            var y = (size.h / 2) - (400 / 2);
+            var x = (size.w / 2) - (600 / 2);
+            modal.style.top = (size.h / 2) - (150 / 2) + "px";
+            modal.style.left = (size.w / 2) - (400 / 2) + "px";
+        };
+        
+        var events = function() {
+            dismiss.onclick = Modal.close;
+            /*
+                I would love to use KeyboardJS from http://robertwhurst.github.com/KeyboardJS/
+                but I cannot justify the additional filesize or code execution time for such a small project :(
+            */
+            //Browser.addEvent(document, "keyup", function(e) { Browser.key(e, 13, Modal.close) }); // Respond only to Enter key
+            Browser.addEvent(document, "keyup", Modal.close); // Respond to any key for sake of simplicity -- takes less time to execute
+        };
+        
+        var open = function(size) {
+            position(size);
+            grey.style.display = "block";
+            modal.style.display = "block";
+            document.body.style.overflow = "hidden";
+            events();
+        };
+        
+        var close = function(e) {
+            grey.style.display = "none";
+            modal.style.display = "none";
+            document.body.style.overflow = "scroll";
+            e.preventDefault();
+        };
+        
+        return {
+            open: open,
+            close: close
+        };
+    })();
+    
+    /*
+        If you can't tell, I really love the Revealing Module pattern proposed by Douglas Crockford.
+        Using prototype, while more memory-efficient, does not allow for the creation of private variables or member functions.
+        I also don't find the prototype approach to be visually appealing
+    */
+    
+    (function() {
+        Modal.open(Browser.size());
+        Links.unmask();
+        Browser.today();
+    })();
+</script>
+
+</html>
